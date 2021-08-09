@@ -1,4 +1,4 @@
-package co.edu.utp.misiontic2022.c2;
+package co.utp.misiontic2022.c1;
 
 import static org.junit.Assert.assertTrue;
 

@@ -1,9 +1,5 @@
-package co.edu.utp.misiontic2022.c1;
+package co.utp.misiontic2022.c1;
 
-/**
- * Programa para calcular Interes simple y compuesto y hacer una comparacion.
- *
- */
 public class Exportacion{
     //---------------------------------------------------------------------------------------------------------------------------------
     //Atributos

@@ -17,15 +17,12 @@ public class PrecioTotal {
     public void mostrarTotales(){
 
         for(Electrodomestico lista: listaElectrodomesticos){
-            if (lista instanceof Electrodomestico){
-                totalElectrodomesticos += lista.calcularPrecio();
-                System.out.println("e");
-            }if (lista instanceof Lavadora){
-                totalLavadoras += lista.calcularPrecio();
-                System.out.println("L");
+            var valor = lista.calcularPrecio();
+            totalElectrodomesticos += valor;
+            if (lista instanceof Lavadora){
+                totalLavadoras += valor;
             }if (lista instanceof Television){
-                totalTelevisores += lista.calcularPrecio();
-                System.out.println("T");
+                totalTelevisores += valor;
             }
         }
         System.out.println("La suma del precio de los electrodomésticos es de " + totalElectrodomesticos);

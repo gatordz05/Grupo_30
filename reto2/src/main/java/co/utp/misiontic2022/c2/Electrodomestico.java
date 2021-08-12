@@ -36,25 +36,35 @@ public class Electrodomestico {
 
     // Metodo que calcula el incremento por consumo
     public void calcularConsumo (){
+        int i = 0;
         switch (consumoW){
             case 'A':
                 adicion += 100;
+                i = 1;
                 break;
             case 'B':
                 adicion += 80;
+                i = 1;
                 break;
             case 'C':
                 adicion += 60;
+                i = 1;
                 break;
             case 'D':
                 adicion += 50;
+                i = 1;
                 break;
             case 'E':
                 adicion += 30;
+                i = 1;
                 break;
             case 'F':
                 adicion += 10;
+                i = 1;
                 break;
+        }
+        if (i == 0){
+            adicion += 10;
         }
     }
 

@@ -5,7 +5,7 @@ public class Television extends Electrodomestico{
     private Integer PULGADAS_BASE = 20;
     private Integer pulgadas;
     private Boolean sintonizadorTDT;
-    private double adicion = 0.0;
+    
     // Constructor sin parametros
     public Television (){
         super();
@@ -32,13 +32,12 @@ public class Television extends Electrodomestico{
     public double calcularPrecio(){
 
         //Definicion del incremento del televisor
-
+        double adicion = 0.0;
         if (sintonizadorTDT == true){
             adicion += 50.0;
         }
         if (pulgadas > 40){
             adicion += (precioBase * 0.3);
-            System.out.println(precioBase);
         }
         double total = super.calcularPrecio() + adicion;
         return total;
